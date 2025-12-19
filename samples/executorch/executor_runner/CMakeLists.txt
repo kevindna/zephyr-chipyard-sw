@@ -36,7 +36,7 @@ set(XNNPACK_BUILD_TESTS OFF CACHE BOOL "Build XNNPack unit tests")
 set(XNNPACK_BUILD_BENCHMARKS OFF CACHE BOOL "Build XNNPack benchmarks")
 set(FLATCC_RTONLY ON CACHE BOOL "enable build of runtime library of flatbuffers only")
 # add_definitions(-DFLATBUFFERS_NO_ABSOLUTE_PATH_RESOLUTION)
-
+set(CONFIG_RISCV_ISA_EXT_V ON CACHE BOOL "enable vector ext")
 
 
 get_filename_component(ET_BUILD_DIR_PATH ${ET_BUILD_DIR_PATH} REALPATH)
